@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../scripts/styles.css" />
+        <title>Cliquez sur le rectangle noir</title>
+        <link rel="icon" href="../../templates/icons/Icone_portefolio.png" />
+    </head>
+    <body>
+        <a class="BUTTON" title="Aller à l'accueil" href="../index.html"><button id="button-rickroll" class="sommaire" accesskey="a"><b>Accueil</b></button></a>
+        <h1 id="titre-rickroll" class="oeuvre"><p>RICK ROLL 😜😂</p></h1> <!--Et ceci est le titre de la page qui est affiché sur la page-->
+
+        <div class="video-container" id="rickroll">
+
+            <!--iframe id="Rickroll" 
+                title="CLiquez"
+                src="https://www.youtube.com/embed/JAjEj2lk0Uk?autoplay=0&controls=0&loop=1&playlist=JAjEj2lk0Uk"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe-->
+
+            <video id="Rickroll" title="Cliquez" loop> <!--Ajouter controls si necessaire ainsi que width="560" height="315"-->
+                <source src="../../templates/videos/Rick Roll.mp4" type="video/mp4">
+                Cliquez pour visionner
+            </video>
+
+        </div>
+
+        <!--div id="paroles">
+            <p class="texte-rickroll">
+                We're no strangers to love <br>
+                You know the rules and so do I <br>
+                A full commitment's what I'm thinkin' of <br>
+                You wouldn't get this from any other guy <br>
+
+                <br>
+
+                I just wanna tell you how I'm feeling <br>
+                Gotta make you understand <br>
+
+                <br>
+
+                Never gonna give you up <br>
+                Never gonna let you down <br>
+                Never gonna run around and desert you <br>
+                Never gonna make you cry <br>
+                Never gonna say goodbye <br>
+                Never gonna tell a lie and hurt you <br>
+
+                <br>
+
+                We've known each other for so long <br>
+                Your heart's been aching, but you're too shy to say it <br>
+                Inside, we both know what's been going on <br>
+                We know the game and we're gonna play it <br>
+
+                <br>
+
+                And if you ask me how I'm feeling <br>
+                Don't tell me you're too blind to see <br>
+
+                <br>
+
+                Never gonna give you up <br>
+                Never gonna let you down <br>
+                Never gonna run around and desert you <br>
+                Never gonna make you cry <br>
+                Never gonna say goodbye <br>
+                Never gonna tell a lie and hurt you <br>
+
+                <br>
+
+                Never gonna give you up <br>
+                Never gonna let you down <br>
+                Never gonna run around and desert you <br>
+                Never gonna make you cry <br>
+                Never gonna say goodbye <br>
+                Never gonna tell a lie and hurt you <br>
+
+                <br>
+
+                We've known other for so long <br>
+                Your heart's been aching, but you're too shy to say it <br>
+                Inside, we both know what's been going on <br>
+                We know the game and we're gonna play it <br>
+
+                <br>
+
+                I just wanna tell you how I'm feeling <br>
+                Gotta make you understand <br>
+
+                <br>
+
+                Never gonna give you up <br>
+                Never gonna let you down <br>
+                Never gonna run around and desert you <br>
+                Never gonna make you cry <br>
+                Never gonna say goodbye <br>
+                Never gonna tell a lie and hurt you <br>
+
+                <br>
+
+                Never gonna give you up <br>
+                Never gonna let you down <br>
+                Never gonna run around and desert you <br>
+                Never gonna make you cry <br>
+                Never gonna say goodbye <br>
+                Never gonna tell a lie and hurt you <br>
+
+                <br>
+
+                Never gonna give you up <br>
+                Never gonna let you down <br>
+                Never gonna run around and desert you <br>
+                Never gonna make you cry <br>
+                Never gonna say goodbye <br>
+                Never gonna tell a lie and hurt you <br>
+
+                <br>
+
+
+            </p>
+        </div-->
+
+        <script>
+            const video = document.getElementById('Rickroll');
+            const titre = document.getElementById('titre-rickroll');
+            const button = document.getElementById('button-rickroll');
+
+            video.onclick = function() {
+                if (video.paused) {
+                    video.play();
+                    //goFullScreen();
+                } else {
+                    video.pause();
+                    //exitFullScreen();
+                }
+            };
+
+            video.addEventListener('play', function() {
+                titre.classList.add('playing'); // Ajoute la classe "playing" quand la video joue
+                button.classList.add('playing');
+                document.title = "Rick Roll";
+            });
+
+            video.addEventListener('pause', function() {
+                //titre.classList.remove('playing'); // Supprime la classe "playing" quand la video est arrêtée
+            }); 
+
+            /*function goFullScreen() {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.webkitRequestFullscreen) { // Safari
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) { // Ancien Edge
+                    video.msRequestFullscreen();
+                }
+            }
+
+            function exitFullScreen() {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                } else if (document.webkitFullscreenElement) { // Safari
+                    document.webkitExitFullscreen();
+                } else if (document.msFullscreenElement) { // Ancien Edge
+                    document.msExitFullscreen();
+                }
+            }
+
+            // Quitter le plein écran automatiquement quand la vidéo se met en pause
+            /*video.addEventListener('pause', function() {
+                exitFullScreen();
+            });*/
+        </script>
+    </body>
+</html>

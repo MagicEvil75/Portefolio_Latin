@@ -1,0 +1,384 @@
+/*La ligne de code qui suit défini les propriétés de style du titre principal*/
+h1 {
+    color: black;
+    font-size: 200%;
+    text-align: center;
+}
+/*La ligne qui suit défini les proprités du titre de classe comparaison*/
+h1.Comparaison {
+    color: blueviolet;
+    font-size: 200%;
+    text-align: center;
+    /*background-color: white;*/
+}
+
+video {
+    display: block;
+    align-self: center;
+}
+
+/*Propriétés du titre secondaire*/
+h2 {
+    margin: auto 5%;
+    color: black;
+    font-size: x-large;
+}
+/*Règles de margination*/
+p.text {
+    margin: auto 5%;
+}
+p.texte-article-rappel {
+    margin: 1em 26% 1em 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-indent: 5%;
+}
+p.texte-article {
+    margin: 1em 5% 1em 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-indent: 5%;
+}
+
+p.texte-rickroll {
+    margin: 1em 5% 1em 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+a.RickRoll:link {
+    text-decoration: none;
+    color: black;
+}
+a.RickRoll:visited {
+    text-decoration: none;
+    color: black;
+}
+.Comparaison a.RickRoll:link {
+    text-decoration: none;
+    color: blueviolet;
+}
+.Comparaison a.RickRoll:visited {
+    text-decoration: none;
+    color: blueviolet;
+}
+/*Propriétés d'un lien hypertexte*/
+a:link {
+    color: blue;
+    text-decoration: underline;
+}
+/*Propritétés d'un lien hypertexte déjà utilisé.*/
+a:visited {
+    color: purple;
+}
+/*Proriétés de la classe comparaison*/
+.Comparaison {
+    color: blueviolet;
+    font-size: x-large;
+    font-weight: bold;
+}
+.auteur {
+    color: rgb(0, 255, 153);
+}
+/*Propriétés de la classe oeuvre*/
+.oeuvre {
+    color: green;
+    font-weight: bold;
+}
+.rappel {
+    color: rgb(250, 79, 6);
+    font-weight: bold;
+}
+/*Propriétés de la classe text*/
+.text {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;    
+    font-style: normal;
+    font-size: larger;
+    padding-right: 100px;
+    position: relative;
+}
+
+.text a {
+    position: relative;
+}
+
+/*Propriété de mise en forme de la page en elle-même*/
+body {
+    background-image: url(../../templates/fond_du_site.jpg);
+    background-size: cover;
+    background-color: wheat;
+}
+/*Propriéré de la box entourant la barre d'avancement du projet*/
+.outer {
+    margin: auto 5%;
+    border: 3px solid black;
+    align-items: center;
+}
+/*Proprité de la barre d'avancement du projet*/
+.box {
+    padding: 7px;
+    width: calc(87% - 14px);
+    color: whitesmoke;
+    align-items: center;
+    animation-duration: 20s;
+    animation-name: rainbow;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+article p {
+    font-size: 125%;
+}
+.tableau1 {
+    width: 700px;
+    display: block;
+    margin: 0px auto;
+}
+.tableau2 {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+}
+.image {
+    width: 335px;
+    display: block;
+    float: right;
+    margin: -15px 30px;   
+}
+.image-container {
+    display: flex;
+    justify-content: space-around ;
+}
+.sommaire {
+    display: block;
+    float: left;
+    margin: -18px 7px;
+    border: 0;
+    line-height: none;
+    padding: 18px 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #000 ;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.sommaire a {
+    display: block;
+    text-decoration: none;
+    color:#000;
+}
+
+.back {
+    display: block;
+    float: right;
+    margin: -84px 7px;
+    border: 0;
+    line-height: none;
+    padding: 18px 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #000 ;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.sommaire:hover,
+.back:hover,
+.play-button:hover {
+    background-color: #ffffffc3;
+    animation-duration: 1.5s;
+    animation-name: button-accueil;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+div#bibliographie,
+div#iconographie {
+    width: 50%;
+    padding-top: 0,5%;
+    padding-left: 4px;
+    padding-bottom: 2%;
+    margin: -19px 5% -15px 5%;
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: top;
+    padding: 6px;
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: #d2d2d2;
+    border: 2px solid black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px 10px;
+    position: relative;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody {
+    background-color: #d2d2d2;
+}
+
+tbody > tr:nth-last-of-type(even) {
+    background-color: #b7b7b7;
+}
+
+tfoot th {
+    text-align: center;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+td a {
+    text-align: center;
+}
+
+a.name,
+a.name:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.fleche {
+    position: absolute;
+    padding-left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-right: 10px solid black; /* Crée un côté invisible */
+    border-top: 10px solid transparent; /* La flèche elle-même */
+    border-bottom: 10px solid transparent;
+    opacity: 0; /* Cachée par défaut */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fleche::after {
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 7px;
+    background-color: black;
+}
+
+.text a:hover ~ .fleche,
+td a:hover ~ .fleche {
+    opacity: 1;
+    animation-name: Arrow-move;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+/* Centrer la vidéo et agrandir son cadre */
+.video-container {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 130px); /* Ajuste en fonction du titre */
+    /* background-color: black; Fond noir effet cinéma */
+    margin-top: -18;
+    width: 80%;
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Empêche les débordements */
+}
+
+h1#titre-rickroll {
+    opacity: 0;
+    transform: scale(0.001);
+}
+
+h1#titre-rickroll.playing {
+    opacity: 1;
+    transform: scale(1);
+}
+
+button#button-rickroll {
+    opacity: 0;
+}
+
+button#button-rickroll.playing {
+    opacity: 1;
+}
+
+@keyframes button-accueil {
+    0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes rainbow {
+    0% { 
+       background-color: red; 
+       color: white;
+    }
+    14% {
+        background-color: orange; 
+        color: black;
+    }
+    28% {
+        background-color: yellow; 
+        color: black;
+    }
+    42% {
+        background-color: green; 
+        color: white;
+    }
+    57% {
+        background-color: blue; 
+        color: white;
+    }
+    71% {
+        background-color: indigo; 
+        color: white;
+    }
+    85% {
+        background-color: violet; 
+        color: black;
+    }
+    100% {
+        background-color: red; 
+        color: white;
+    }
+}
+
+@keyframes Arrow-move {
+    0% {
+        transform: translateY(-50%) translateX(0);
+    }
+    100% {
+        transform: translateY(-50%) translateX(10px);
+    }
+}
+

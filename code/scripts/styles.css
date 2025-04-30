@@ -152,6 +152,12 @@ article p {
     display: flex;
     justify-content: space-around ;
 }
+.image-pompei {
+    width: 10%;
+    display: block;
+    float: right;
+    margin: -15px 30px; 
+}
 .sommaire {
     display: block;
     float: left;

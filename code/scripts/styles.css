@@ -119,7 +119,7 @@ body {
 /*Proprité de la barre d'avancement du projet*/
 .box {
     padding: 7px;
-    width: calc(87% - 14px);
+    width: calc(100% - 14px);
     color: whitesmoke;
     align-items: center;
     animation-duration: 20s;
